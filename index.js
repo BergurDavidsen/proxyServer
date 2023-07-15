@@ -37,3 +37,8 @@ app.post('/proxy', (req, res) => {
       res.sendStatus(500);
     });
 });
+
+
+app.listen(process.env.PORT || port, () => {
+  console.log(`Proxy server listening on port ${port}`);
+});
