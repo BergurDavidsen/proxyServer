@@ -20,7 +20,7 @@ app.post('/proxy', express.text(), (req, res) => {
     'Content-Type': 'application/json'
   };
 
-  axios.post(flowcoreWeb, jsonData, { headers })
+  axios.post(webhookSite, jsonData, { headers })
     .then(response => {
       console.log('Data sent to webhook successfully');
       console.log(jsonData)
