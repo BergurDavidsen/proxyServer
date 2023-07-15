@@ -17,7 +17,7 @@ app.post('/proxy', express.text(), (req, res) => {
     'Content-Type': 'application/json'
   };
 
-  axios.post('https://webhook.api.staging.flowcore.io/event/bergurdavidsen/b23f801d-76d4-49fa-a52e-711088c795cb/test3/create?key=4b882a56-5922-4db3-ac8f-603d848c7aa8', jsonData, { headers })
+  axios.post('https://webhook.api.staging.flowcore.io/event/bergurdavidsen/b23f801d-76d4-49fa-a52e-711088c795cb/running-data/create?key=4b882a56-5922-4db3-ac8f-603d848c7aa8', jsonData, { headers })
     .then(response => {
       console.log('Data sent to webhook successfully');
       res.sendStatus(200);
